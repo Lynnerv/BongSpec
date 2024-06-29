@@ -24,9 +24,13 @@ h1 {
     font-weight: 600;
 }
 
+.form-group {
+    margin-bottom: 15px;
+}
+
 label {
     display: block;
-    margin-top: 15px;
+    margin-bottom: 5px;
     color: #666;
     font-size: 14px;
 }
@@ -51,7 +55,7 @@ button {
     width: 100%;
     padding: 12px;
     margin-top: 20px;
-    background-color: #28a745;
+    background-color: #28a745; /* Green color */
     color: white;
     border: none;
     border-radius: 6px;
@@ -61,19 +65,19 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Darker green */
 }
 
-a { /*nabvar*/
-    display: block;
+.login-link {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 20px;
+    display: block;
     color: #007bff;
     font-size: 14px;
     text-decoration: none;
 }
 
-a:hover {
+.login-link:hover {
     text-decoration: underline;
 }
 
@@ -83,10 +87,26 @@ a:hover {
     font-size: 13px;
 }
 
-.login-link {
-    margin-top: 15px;
-    display: block;
-    text-align: center;
+/* Footer Styles */
+footer {
+    text-align: justify;
+    padding: 0px;
+    background-color: #ffffff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Additional Styles */
