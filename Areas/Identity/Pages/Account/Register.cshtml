@@ -16,18 +16,35 @@
     <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
         <h1>Formulario de Registro</h1>
         <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-        <label for="name">Nombre</label>
-        <input asp-for="Input.Name" class="form-control" aria-required="true" placeholder="Nombre" id="name" />
-        <span asp-validation-for="Input.Name" class="text-danger"></span>
+        
+        <label for="nombres">Nombres</label>
+        <input asp-for="Input.Nombres" class="form-control" aria-required="true" placeholder="Nombres" id="nombres" />
+        <span asp-validation-for="Input.Nombres" class="text-danger"></span>
+
+        <label for="apellidoPaterno">Apellido Paterno</label>
+        <input asp-for="Input.ApellidoPaterno" class="form-control" aria-required="true" placeholder="Apellido Paterno" id="apellidoPaterno" />
+        <span asp-validation-for="Input.ApellidoPaterno" class="text-danger"></span>
+
+        <label for="apellidoMaterno">Apellido Materno</label>
+        <input asp-for="Input.ApellidoMaterno" class="form-control" aria-required="true" placeholder="Apellido Materno" id="apellidoMaterno" />
+        <span asp-validation-for="Input.ApellidoMaterno" class="text-danger"></span>
+
+        <label for="dni">Documento de Identidad (DNI)</label>
+        <input asp-for="Input.DNI" class="form-control" aria-required="true" placeholder="Documento de Identidad (DNI)" id="dni" />
+        <span asp-validation-for="Input.DNI" class="text-danger"></span>
+
         <label for="email">Email</label>
         <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Email" id="email" />
         <span asp-validation-for="Input.Email" class="text-danger"></span>
+
         <label for="password">Contraseña</label>
         <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Contraseña" id="password" />
         <span asp-validation-for="Input.Password" class="text-danger"></span>
+
         <label for="confirmPassword">Confirmar Contraseña</label>
         <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirmar Contraseña" id="confirmPassword" />
         <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+
         <a href="/Account/Login" class="login-link">¿Ya estás registrado? ¡Ir a login!</a>
         <button type="submit">Registrar</button>
     </form>
